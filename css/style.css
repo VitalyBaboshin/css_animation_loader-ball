@@ -1,0 +1,87 @@
+body {
+    padding: 100px;
+}
+.wrapper, .ball {
+    width: 15px;
+    height: 15px;
+}
+.wrapper {
+    position: relative;
+}
+.ball {
+    position: absolute;
+    border-radius: 50%;
+}
+.ball-1 {
+    background-color: red;
+    animation: 3s ease-in-out 0s infinite ball-1;
+}
+.ball-2 {
+    background-color: green;
+    animation: 3s ease-in-out 0s infinite ball-2;
+}
+.ball-3 {
+    background-color: blue;
+    animation: 3s ease-in-out 0s infinite ball-3;
+}
+.ball-4 {
+    background-color: pink;
+    animation: 3s ease-in-out 0s infinite ball-4;
+}
+@keyframes ball-1 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -20px);
+    }
+    50% {
+        transform: translate(20px, 0);
+    }
+    75% {
+        transform: translate(-20px, 0);
+    }
+}
+@keyframes ball-2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, 0);
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    75% {
+        transform: translate(0, -20px);
+    }
+}
+@keyframes ball-3 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 20px);
+    }
+    50% {
+        transform: translate(-20px, 0);
+    }
+    75% {
+        transform: translate(20px, 0);
+    }
+}
+@keyframes ball-4 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-20px, 0);
+    }
+    50% {
+        transform: translate(0, -20px);
+    }
+    75% {
+        transform: translate(0, 20px);
+    }
+}
+
